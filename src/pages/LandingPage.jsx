@@ -1,6 +1,8 @@
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div className="landingpage">
+      <header className="w-100 min-vh-100"></header>
+    </div>
   )
 }
 
