@@ -21,12 +21,12 @@ function App() {
       <Routes>
         <Route path="/" Component={LandingPage} />
         <Route path="/beranda" Component={HomePage} />
+        <Route path="/membership" Component={MembershipPage} />
         <Route path="/reservasi" Component={ReservasiPage} />
         <Route path="/artikel" Component={ArtikelPage} />
+        <Route path="/tentangkami" Component={TentangPage} />
         <Route path="/login" Component={LoginPage} />
         <Route path="/daftar" Component={DaftarPage} />
-        <Route path="/membership" Component={MembershipPage} />
-        <Route path="/tentangkami" Component={TentangPage} />
         <Route path="/syarat&ketentuan" Component={SyaratKetentuanPage} />
       </Routes>
       
