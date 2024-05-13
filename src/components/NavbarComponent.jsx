@@ -2,13 +2,24 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
 
+import logo from "../data/logo.png"
+
 const NavbarComponent = () => {
   return (
     <div>
       {" "}
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="#home">GymStoria.</Navbar.Brand>
+          <div style={{display: "flex", alignItems: "center"}}>
+            <Navbar.Brand href="/" style={{marginRight: "1px"}}>
+              <img 
+              src={logo}
+              alt="" 
+              style={{maxHeight: "50%", maxWidth: "50%"}}
+              />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto text-center">
@@ -19,7 +30,8 @@ const NavbarComponent = () => {
                       to={link.path}
                       className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "active" : ""
-                      } end
+                      }
+                      end
                     >
                       {link.text}
                     </NavLink>
@@ -27,11 +39,13 @@ const NavbarComponent = () => {
                 );
               })}
             </Nav>
-            <div>
+            <div className="text-center">
               <button className="btn btn-outline fw-bold">Masuk</button>
             </div>
             <div className="text-center">
-              <button className="btn btn-outline rounded-3 bg-light fw-bold">Daftar</button>
+              <button className="btn btn-outline rounded-3 bg-light fw-bold">
+                Daftar
+              </button>
             </div>
           </Navbar.Collapse>
         </Container>
