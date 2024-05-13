@@ -10,16 +10,9 @@ const NavbarComponent = () => {
       {" "}
       <Navbar expand="lg">
         <Container>
-          <div style={{display: "flex", alignItems: "center"}}>
-            <Navbar.Brand href="/" style={{marginRight: "1px"}}>
-              <img 
-              src={logo}
-              alt="" 
-              style={{maxHeight: "50%", maxWidth: "50%"}}
-              />
+            <Navbar.Brand href="/" className="logo fw-bold">
+              GymStoria.
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto text-center">
