@@ -2,7 +2,6 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
 
-import logo from "../data/logo.png"
 
 const NavbarComponent = () => {
   return (
@@ -10,9 +9,13 @@ const NavbarComponent = () => {
       {" "}
       <Navbar expand="lg">
         <Container>
-            <Navbar.Brand href="/" className="logo fw-bold">
-              GymStoria.
-            </Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img 
+            src="/logo.png" 
+            width="120"
+            height="50"
+            alt="" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto text-center">
