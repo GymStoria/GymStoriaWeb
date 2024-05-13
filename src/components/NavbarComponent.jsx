@@ -1,4 +1,4 @@
-const NavbarComponent = () => {
+ const NavbarComponent = () => {
   return (
     <div>NavbarComponent</div>
   )
