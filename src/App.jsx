@@ -1,17 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 
-import NavbarComponent from "./components/Navbar/NavbarComponent";
-import FooterComponent from "./components/Footer/FooterComponent";
+import NavbarComponent from "./components/NavbarComponent";
+import FooterComponent from "./components/FooterComponent";
 
-import LandingPage from "./pages/LandingPage/LandingPage";
-import HomePage from "./pages/HomePage/HomePage";
-import ReservasiPage from "./pages/ReservasiPage/ReservasiPage";
-import ArtikelPage from "./pages/ArtikelPage/ArtikelPage";
-import LoginPage from "./pages/LoginPage/LoginPage";
-import DaftarPage from "./pages/DaftarPage/DaftarPage";
-import MembershipPage from "./pages/MembershipPage/MembershipPage";
-import TentangPage from "./pages/TentangPage/TentangPage";
-import SyaratKetentuanPage from "./pages/SyaratKetentuanPage/SyaratKetentuanPage";
+import LandingPage from "./pages/LandingPage";
+import HomePage from "./pages/HomePage";
+import ReservasiPage from "./pages/ReservasiPage";
+import ArtikelPage from "./pages/ArtikelPage";
+import LoginPage from "./pages/LoginPage";
+import DaftarPage from "./pages/DaftarPage";
+import MembershipPage from "./pages/MembershipPage";
+import TentangPage from "./pages/TentangPage";
+import SyaratKetentuanPage from "./pages/SyaratKetentuanPage";
 
 
 function App() {
