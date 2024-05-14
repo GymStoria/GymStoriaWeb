@@ -30,7 +30,7 @@ function App() {
         <Route path="/syarat&ketentuan" Component={SyaratKetentuanPage} />
       </Routes>
       
-      {/* <FooterComponent /> */}
+      <FooterComponent />
     </div>
   );
 }
