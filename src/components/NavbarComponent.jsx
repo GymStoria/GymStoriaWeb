@@ -56,10 +56,10 @@ const NavbarComponent = () => {
               })}
             </Nav>
             <div className="text-center">
-              <button className="btn btn-outline fw-bold">Masuk</button>
+              <button className="masuk btn btn-outline fw-bold">Masuk</button>
             </div>
             <div className="text-center">
-              <button className="btn btn-outline rounded-3 bg-light fw-bold">
+              <button className="daftar btn btn-outline rounded-3 bg-light fw-bold">
                 Daftar
               </button>
             </div>

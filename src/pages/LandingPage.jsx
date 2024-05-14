@@ -17,7 +17,7 @@ const LandingPage = () => {
                 minus, dicta assumenda voluptate dignissimos optio numquam
                 tenetur debitis harum aspernatur?
               </p>
-              <button className="btn btn-light btn-lg rounded-3 mb-xs-0 mb-2">
+              <button className="btn btn-light btn-lg rounded-3 mb-xs-0 mb-2 fw-bold">
                 Get Started Now
               </button>
             </Col>
