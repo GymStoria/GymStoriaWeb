@@ -1,21 +1,45 @@
 import { Container, Row, Col } from "react-bootstrap";
-import bghome from "/bghome.png";
 
 const HomePage = () => {
   return (
-    <div className="home min-vh-100">
-      <img src={bghome} width="100%" height="550" alt="" />
-      <Container>
-        <Row>
-          <Col>
-            <h1 className="fw-bold text-center">Home</h1>
-            <p className="fw-bold text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
-              sint?
-            </p>
-          </Col>
-        </Row>
-      </Container>
+    <div className="home ">
+      <header className="min-vh-100 w-100">
+        <Container>
+          <Row>
+            <Col className="text-white ">
+              <h1>Lokasi saya sekarang</h1>
+              <p>Indonesia, Jawa Tengah</p>
+            </Col>
+          </Row>
+        </Container>
+      </header>
+      <div className="banner min-vh-100 w-100">
+        <Container>
+          <Row>
+            <Col>
+              <img src="/banner.png" alt="banner image" />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <h1>REKOMENDASI</h1>
+            </Col>
+          </Row>
+          <Row className="fitur rounded-3">
+            <Col>
+              <h1 className="text-white">TERDEKAT</h1>
+            </Col>
+            <Col><h1>POPULER</h1></Col>
+            <Col><h1>PROMO</h1></Col>
+            <Col><h1>BUKA 24 JAM</h1></Col>
+          </Row>
+          <Row>
+            <Col>
+              <h1>produk</h1>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };
