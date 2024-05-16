@@ -4,37 +4,32 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
 
-import logo from "/logo.png"
-
+import logo from "/logo.png";
 
 const NavbarComponent = () => {
   const [changeColor, setCangeColor] = useState(false);
 
   const changeBackgroundColor = () => {
-    if (window.scrollY > 10){
+    if (window.scrollY > 10) {
       setCangeColor(true);
     } else {
       setCangeColor(false);
     }
-  }
-  
+  };
+
   useEffect(() => {
     changeBackgroundColor();
 
     window.addEventListener("scroll", changeBackgroundColor);
   });
-  
+
   return (
     <div>
       {" "}
-      <Navbar expand="lg" className={changeColor? "color-active" : ""}>
+      <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img 
-            src={logo} 
-            width="120"
-            height="50"
-            alt="" />
+            <img src={logo} width="120" height="50" alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

@@ -17,34 +17,33 @@ import GymImage16 from "../assets/img/gym/gym16.jpg";
 import GymImage17 from "../assets/img/gym/gym17.jpg";
 import GymImage18 from "../assets/img/gym/gym18.jpg";
 
-
 export const navLinks = [
-    {
-      id: 1,
-      path: "beranda",
-      text: "Beranda",
-    },
-    {
-      id: 2,
-      path: "membership",
-      text: "Membership",
-    },
-    {
-      id: 3,
-      path: "reservasi",
-      text: "Reservasi",
-    },
-    {
-      id: 4,
-      path: "artikel",
-      text: "Artikel",
-    },
-    {
-      id: 5,
-      path: "tentangkami",
-      text: "Tentang Kami",
-    },
-  ];
+  {
+    id: 1,
+    path: "beranda",
+    text: "Beranda",
+  },
+  {
+    id: 2,
+    path: "membership",
+    text: "Membership",
+  },
+  {
+    id: 3,
+    path: "reservasi",
+    text: "Reservasi",
+  },
+  {
+    id: 4,
+    path: "artikel",
+    text: "Artikel",
+  },
+  {
+    id: 5,
+    path: "tentangkami",
+    text: "Tentang Kami",
+  },
+];
 
 export const tempatGym = [
   {
@@ -60,7 +59,7 @@ export const tempatGym = [
   {
     id: 2,
     image: GymImage2,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini gym terdekat",
     alamat: "Jl.Raya Soedirman",
     category: "terdekat",
@@ -70,7 +69,7 @@ export const tempatGym = [
   {
     id: 3,
     image: GymImage3,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym paling populer",
     alamat: "Jl.Raya Soedirman",
     category: "populer",
@@ -80,7 +79,7 @@ export const tempatGym = [
   {
     id: 4,
     image: GymImage4,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym sedang promo",
     alamat: "Jl.Raya Soedirman",
     category: "promo",
@@ -90,7 +89,7 @@ export const tempatGym = [
   {
     id: 5,
     image: GymImage5,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym buka 24 jam",
     alamat: "Jl.Raya Soedirman",
     category: "buka24jam",
@@ -100,7 +99,7 @@ export const tempatGym = [
   {
     id: 6,
     image: GymImage6,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym buka 24 jam",
     alamat: "Jl.Raya Soedirman",
     category: "buka24jam",
@@ -120,7 +119,7 @@ export const tempatGym = [
   {
     id: 8,
     image: GymImage8,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini gym terdekat",
     alamat: "Jl.Raya Soedirman",
     category: "terdekat",
@@ -130,7 +129,7 @@ export const tempatGym = [
   {
     id: 9,
     image: GymImage9,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym paling populer",
     alamat: "Jl.Raya Soedirman",
     category: "populer",
@@ -140,7 +139,7 @@ export const tempatGym = [
   {
     id: 10,
     image: GymImage10,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym sedang promo",
     alamat: "Jl.Raya Soedirman",
     category: "promo",
@@ -150,7 +149,7 @@ export const tempatGym = [
   {
     id: 11,
     image: GymImage11,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym buka 24 jam",
     alamat: "Jl.Raya Soedirman",
     category: "buka24jam",
@@ -160,7 +159,7 @@ export const tempatGym = [
   {
     id: 12,
     image: GymImage12,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym buka 24 jam",
     alamat: "Jl.Raya Soedirman",
     category: "buka24jam",
@@ -180,7 +179,7 @@ export const tempatGym = [
   {
     id: 14,
     image: GymImage14,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini gym terdekat",
     alamat: "Jl.Raya Soedirman",
     category: "terdekat",
@@ -190,7 +189,7 @@ export const tempatGym = [
   {
     id: 15,
     image: GymImage15,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym paling populer",
     alamat: "Jl.Raya Soedirman",
     category: "populer",
@@ -200,7 +199,7 @@ export const tempatGym = [
   {
     id: 16,
     image: GymImage16,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym sedang promo",
     alamat: "Jl.Raya Soedirman",
     category: "promo",
@@ -210,7 +209,7 @@ export const tempatGym = [
   {
     id: 17,
     image: GymImage17,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym buka 24 jam",
     alamat: "Jl.Raya Soedirman",
     category: "buka24jam",
@@ -220,7 +219,7 @@ export const tempatGym = [
   {
     id: 18,
     image: GymImage18,
-    rating: 4.5 ,
+    rating: 4.5,
     title: "Ini tempat gym buka 24 jam",
     alamat: "Jl.Raya Soedirman",
     category: "buka24jam",

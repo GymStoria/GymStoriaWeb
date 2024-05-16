@@ -11,6 +11,7 @@ import buka24jamImg from "../assets/img/button/btnbuka24jam.png";
 const HomePage = () => {
   const [tempatDefault, setTempatDefault] = useState([]);
   const [filterGym, setFilterGym] = useState([]);
+  const [activeFilter, setActiveFilter] = useState(""); // Pindahkan ke atas useEffect
 
   useEffect(() => {
     setFilterGym(tempatGym.slice(0, 6));
@@ -20,9 +21,11 @@ const HomePage = () => {
   const filterResult = (catGym) => {
     if (catGym === "all") {
       setFilterGym(tempatDefault);
+      setActiveFilter(""); // Atur kembali activeFilter ke nilai awal
     } else {
       const result = tempatGym.filter((tempat) => tempat.category === catGym);
-      setFilterGym(result.length ? result : TempatDefault);
+      setFilterGym(result.length ? result : tempatDefault);
+      setActiveFilter(catGym);
     }
   };
 
@@ -52,44 +55,48 @@ const HomePage = () => {
           </Row>
           <Row className="fitur rounded-3">
             <Col>
-              <div className="filter-item">
-                <img
-                  src={terdekatImg}
-                  alt="terdekat"
-                  onClick={() => filterResult("terdekat")}
-                  className="img-button"
-                />
+              <div
+                className={`filter-item ${
+                  activeFilter === "terdekat" ? "active" : ""
+                }`}
+                onClick={() => filterResult("terdekat")}
+              >
+                <img src={terdekatImg} alt="terdekat" className="img-button" />
                 <h2>Terdekat</h2>
               </div>
             </Col>
             <Col>
-              <div className="filter-item">
-                <img
-                  src={populerImg}
-                  alt="populer"
-                  onClick={() => filterResult("populer")}
-                  className="img-button"
-                />
+              <div
+                className={`filter-item ${
+                  activeFilter === "populer" ? "active" : ""
+                }`}
+                onClick={() => filterResult("populer")}
+              >
+                <img src={populerImg} alt="populer" className="img-button" />
                 <h2>Populer</h2>
               </div>
             </Col>
             <Col>
-              <div className="filter-item">
-                <img
-                  src={promoImg}
-                  alt="promo"
-                  onClick={() => filterResult("promo")}
-                  className="img-button"
-                />
+              <div
+                className={`filter-item ${
+                  activeFilter === "promo" ? "active" : ""
+                }`}
+                onClick={() => filterResult("promo")}
+              >
+                <img src={promoImg} alt="promo" className="img-button" />
                 <h2>Promo</h2>
               </div>
             </Col>
             <Col>
-              <div className="filter-item">
+              <div
+                className={`filter-item ${
+                  activeFilter === "buka24jam" ? "active" : ""
+                }`}
+                onClick={() => filterResult("buka24jam")}
+              >
                 <img
                   src={buka24jamImg}
                   alt="buka24jam"
-                  onClick={() => filterResult("buka24jam")}
                   className="img-button"
                 />
                 <h2>Buka 24 Jam</h2>
@@ -108,7 +115,7 @@ const HomePage = () => {
                     <img
                       src={tempat.image}
                       alt=""
-                      className="mb-3 rounded-top"
+                      className="image-with-shadow mb-3 rounded-top"
                     />
                   </div>
 
@@ -123,7 +130,7 @@ const HomePage = () => {
             })}
           </Row>
           <Row>
-            <Col className="text-center mt-3 mb-3">
+            <Col className="text-center mt-3 mb-3 pt-5">
               <button onClick={() => filterResult("all")}>
                 lihat semua tempat
               </button>

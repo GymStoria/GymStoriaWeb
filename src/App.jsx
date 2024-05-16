@@ -29,7 +29,7 @@ function App() {
         <Route path="/daftar" Component={DaftarPage} />
         <Route path="/syarat&ketentuan" Component={SyaratKetentuanPage} />
       </Routes>
-      
+
       <FooterComponent />
     </div>
   );
