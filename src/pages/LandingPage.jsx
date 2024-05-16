@@ -1,8 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import logo from "/logo.png";
 import app from "/app.png";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+  const getStarted = () => {
+    navigate("/beranda");
+  }
+
   return (
     <div className="landingpage">
       <header className="w-100 min-vh-100 d-flex align-items-center">
@@ -17,7 +23,10 @@ const LandingPage = () => {
                 minus, dicta assumenda voluptate dignissimos optio numquam
                 tenetur debitis harum aspernatur?
               </p>
-              <button className="btn btn-light btn-lg rounded-3 mb-xs-0 mb-2 fw-bold">
+              <button 
+              className="btn btn-light btn-lg rounded-3 mb-xs-0 mb-2 fw-bold"
+              onClick={getStarted}
+              >
                 Get Started Now
               </button>
             </Col>
