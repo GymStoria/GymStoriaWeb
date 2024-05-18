@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import logo from "/logo.png";
-import app from "/app.png";
+import app from "../assets/img/banner/mobileapp.svg";
 
 const LandingPage = () => {
   const navigate = useNavigate();

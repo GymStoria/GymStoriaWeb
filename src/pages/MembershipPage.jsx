@@ -5,7 +5,7 @@ import logoGym from "/logo.png";
 import kartu from "../assets/img/icon/kartu.png";
 import user from "../assets/img/icon/user.png";
 import jam from "../assets/img/icon/jam.png";
-import thejade from "../assets/img/gym/thejade.png";
+import thejade from "../assets/img/gym/thejade.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

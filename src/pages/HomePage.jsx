@@ -3,10 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import { tempatGym } from "../data/index";
 import { FaStar } from "react-icons/fa";
 
-import terdekatImg from "../assets/img/button/btnterdekat.png";
-import populerImg from "../assets/img/button/btnpopuler.png";
-import promoImg from "../assets/img/button/btnpromo.png";
-import buka24jamImg from "../assets/img/button/btnbuka24jam.png";
+import terdekatImg from "../assets/img/button/btnterdekat.svg";
+import populerImg from "../assets/img/button/btnpopuler.svg";
+import promoImg from "../assets/img/button/btnpromo.svg";
+import buka24jamImg from "../assets/img/button/btnbuka24jam.svg";
+import bannerDiskon from "../assets/img/banner/bannerDiskon.svg"
 
 const HomePage = () => {
   const [tempatDefault, setTempatDefault] = useState([]);
@@ -45,7 +46,7 @@ const HomePage = () => {
         <Container>
           <Row>
             <Col>
-              <img src="/banner.png" alt="banner image" />
+              <img src={bannerDiskon} alt="banner image" />
             </Col>
           </Row>
           <Row>
