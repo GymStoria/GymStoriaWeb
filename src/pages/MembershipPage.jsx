@@ -1,10 +1,19 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { FaStar } from "react-icons/fa";
 
 import logoGym from "/logo.png";
 import kartu from "../assets/img/icon/kartu.png";
 import user from "../assets/img/icon/user.png";
 import jam from "../assets/img/icon/jam.png";
 import thejade from "../assets/img/gym/thejade.png";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper/modules";
+import { kartuMember } from "../data";
 
 const MembershipPage = () => {
   return (
@@ -67,8 +76,56 @@ const MembershipPage = () => {
             <h1>Keanggotaan Lainnya</h1>
           </Col>
         </Row>
+        <Row>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              992: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {kartuMember.map((kartu) => {
+              return (
+                <SwiperSlide>
+                  <div className="img-kartu">
+                    <div className="rating-kartu">
+                      <FaStar />
+                      <span className="mt-1">{kartu.rating} (456)</span>
+                    </div>
+                    <img src={kartu.image} alt="" />
+                    <div className="deskripsi">
+                      <h1 className="fw-semibold">{kartu.title}</h1>
+                      <h5>{kartu.no}</h5>
+                      <h5>{kartu.jenis}</h5>
+                      <p>{kartu.batas}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </Row>
       </Container>
-      <div className="bg-light min-vh-100"></div>
     </div>
   );
 };

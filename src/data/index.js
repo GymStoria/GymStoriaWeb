@@ -17,6 +17,13 @@ import GymImage16 from "../assets/img/gym/gym16.jpg";
 import GymImage17 from "../assets/img/gym/gym17.jpg";
 import GymImage18 from "../assets/img/gym/gym18.jpg";
 
+import kartuImg1 from "../assets/img/kartu-member/member1.png"
+import kartuImg2 from "../assets/img/kartu-member/member2.png"
+import kartuImg3 from "../assets/img/kartu-member/member3.png"
+import kartuImg4 from "../assets/img/kartu-member/member4.png"
+import kartuImg5 from "../assets/img/kartu-member/member5.png"
+import kartuImg6 from "../assets/img/kartu-member/member6.png"
+
 export const navLinks = [
   {
     id: 1,
@@ -225,5 +232,68 @@ export const tempatGym = [
     category: "buka24jam",
     status: "Sedang Ramai",
     jarak: "2.5 km",
+  },
+];
+
+export const kartuMember = [
+  {
+    id: 1,
+    image: kartuImg1,
+    rating: 4.5,
+    category: "Gold",
+    title: "Runman",
+    no: "No Kartu : NDF234294729",
+    jenis: "Khusus Pria",
+    batas: "Masa Aktif : Desember 2024" 
+  },
+  {
+    id: 2,
+    image: kartuImg2,
+    rating: 4.5,
+    category: "Gold",
+    title: "Runman",
+    no: "No Kartu : NDF234294729",
+    jenis: "Khusus Pria",
+    batas: "Masa Aktif : Desember 2024" 
+  },
+  {
+    id: 3,
+    image: kartuImg3,
+    rating: 4.5,
+    category: "Gold",
+    title: "Runman",
+    no: "No Kartu : NDF234294729",
+    jenis: "Khusus Pria",
+    batas: "Masa Aktif : Desember 2024" 
+  },
+  {
+    id: 4,
+    image: kartuImg4,
+    rating: 4.5,
+    category: "Gold",
+    title: "Runman",
+    no: "No Kartu : NDF234294729",
+    jenis: "Khusus Pria",
+    batas: "Masa Aktif : Desember 2024" 
+  },
+  {
+    id: 5,
+    image: kartuImg5,
+    rating: 4.5,
+    category: "Gold",
+    title: "Runman",
+    no: "No Kartu : NDF234294729",
+    jenis: "Khusus Pria",
+    batas: "Masa Aktif : Desember 2024" 
+  },
+  {
+    id: 6,
+    image: kartuImg6,
+    rating: 4.5,
+    category: "Gold",
+    title: "Runman",
+    no: "No Kartu : NDF234294729",
+    jenis: "Khusus Pria",
+    batas: "Masa Aktif : Desember 2024" 
   },
 ];
