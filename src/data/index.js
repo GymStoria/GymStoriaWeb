@@ -17,12 +17,23 @@ import GymImage16 from "../assets/img/gym/gym16.jpg";
 import GymImage17 from "../assets/img/gym/gym17.jpg";
 import GymImage18 from "../assets/img/gym/gym18.jpg";
 
-import kartuImg1 from "../assets/img/kartu-member/member1.png"
-import kartuImg2 from "../assets/img/kartu-member/member2.png"
-import kartuImg3 from "../assets/img/kartu-member/member3.png"
-import kartuImg4 from "../assets/img/kartu-member/member4.png"
-import kartuImg5 from "../assets/img/kartu-member/member5.png"
-import kartuImg6 from "../assets/img/kartu-member/member6.png"
+import kartuImg1 from "../assets/img/kartu-member/member1.png";
+import kartuImg2 from "../assets/img/kartu-member/member2.png";
+import kartuImg3 from "../assets/img/kartu-member/member3.png";
+import kartuImg4 from "../assets/img/kartu-member/member4.png";
+import kartuImg5 from "../assets/img/kartu-member/member5.png";
+import kartuImg6 from "../assets/img/kartu-member/member6.png";
+
+import semuaGym1 from "../assets/img/gym/semuagym1.jpg";
+import semuaGym2 from "../assets/img/gym/semuagym2.jpg";
+import semuaGym3 from "../assets/img/gym/semuagym3.jpg";
+import semuaGym4 from "../assets/img/gym/semuagym4.jpg";
+import semuaGym5 from "../assets/img/gym/semuagym5.jpg";
+import semuaGym6 from "../assets/img/gym/semuagym6.jpg";
+import semuaGym7 from "../assets/img/gym/semuagym7.jpg";
+import semuaGym8 from "../assets/img/gym/semuagym8.jpg";
+import semuaGym9 from "../assets/img/gym/semuagym9.jpg";
+import semuaGym10 from "../assets/img/gym/semuagym10.jpg";
 
 export const navLinks = [
   {
@@ -244,7 +255,7 @@ export const kartuMember = [
     title: "Runman",
     no: "No Kartu : NDF234294729",
     jenis: "Khusus Pria",
-    batas: "Masa Aktif : Desember 2024" 
+    batas: "Masa Aktif : Desember 2024",
   },
   {
     id: 2,
@@ -254,7 +265,7 @@ export const kartuMember = [
     title: "Runman",
     no: "No Kartu : NDF234294729",
     jenis: "Khusus Pria",
-    batas: "Masa Aktif : Desember 2024" 
+    batas: "Masa Aktif : Desember 2024",
   },
   {
     id: 3,
@@ -264,7 +275,7 @@ export const kartuMember = [
     title: "Runman",
     no: "No Kartu : NDF234294729",
     jenis: "Khusus Pria",
-    batas: "Masa Aktif : Desember 2024" 
+    batas: "Masa Aktif : Desember 2024",
   },
   {
     id: 4,
@@ -274,7 +285,7 @@ export const kartuMember = [
     title: "Runman",
     no: "No Kartu : NDF234294729",
     jenis: "Khusus Pria",
-    batas: "Masa Aktif : Desember 2024" 
+    batas: "Masa Aktif : Desember 2024",
   },
   {
     id: 5,
@@ -284,7 +295,7 @@ export const kartuMember = [
     title: "Runman",
     no: "No Kartu : NDF234294729",
     jenis: "Khusus Pria",
-    batas: "Masa Aktif : Desember 2024" 
+    batas: "Masa Aktif : Desember 2024",
   },
   {
     id: 6,
@@ -294,6 +305,149 @@ export const kartuMember = [
     title: "Runman",
     no: "No Kartu : NDF234294729",
     jenis: "Khusus Pria",
-    batas: "Masa Aktif : Desember 2024" 
+    batas: "Masa Aktif : Desember 2024",
   },
+];
+
+export const reservasiGym = [
+  {
+    id: 1,
+    kategori: "Terdekat",
+    image: semuaGym1,
+    rating: 4.5,
+    title: "New Celeb Fitness",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: false,
+    open24hours: false
+  },
+  {
+    id: 2,
+    kategori: "Terdekat",
+    image: semuaGym2,
+    rating: 4.5,
+    title: "Makarios Fitness Centre",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: false,
+    open24hours: false
+  },
+  {
+    id: 3,
+    kategori: "Terdekat",
+    image: semuaGym3,
+    rating: 4.5,
+    title: "The Jade",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: false,
+    open24hours: false
+  },
+  {
+    id: 4,
+    kategori: "Populer",
+    image: semuaGym4,
+    rating: 4.5,
+    title: "OXYGYM",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: false,
+    open24hours: false
+  },
+  {
+    id: 5,
+    kategori: "Populer",
+    image: semuaGym5,
+    rating: 4.5,
+    title: "Indigo Sport Center",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: false,
+    open24hours: false
+  },
+  {
+    id: 6,
+    kategori: "Populer",
+    image: semuaGym6,
+    rating: 4.5,
+    title: "New Celeb Fitness",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: false,
+    open24hours: false
+  },
+  {
+    id: 7,
+    kategori: "Promo",
+    image: semuaGym7,
+    rating: 4.5,
+    title: "Makarios Fitness Centre",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: true,
+    open24hours: false
+  },
+  {
+    id: 8,
+    kategori: "Promo",
+    image: semuaGym8,
+    rating: 4.5,
+    title: "The Jade",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: true,
+    open24hours: false
+  },
+  {
+    id: 9,
+    kategori: "Promo",
+    image: semuaGym9,
+    rating: 4.5,
+    title: "OXYGYM",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: true,
+    open24hours: false
+  },
+  {
+    id: 10,
+    kategori: "Buka 24 Jam",
+    image: semuaGym10,
+    rating: 4.5,
+    title: "Indigo Sport Center",
+    jam: "08.30 - 21.00",
+    alamat: "Jl. R.E. Martadinata. No.148, Cipedes, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat",
+    status: "Sedang Ramai",
+    jarak: "2.5 km",
+    distance: 2.5,
+    promo: false,
+    open24hours: true
+  }
 ];
