@@ -1,7 +1,8 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import NavbarComponent from "./components/NavbarComponent";
 import FooterComponent from "./components/FooterComponent";
+import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop
 
 import LandingPage from "./pages/LandingPage";
 import HomePage from "./pages/HomePage";
@@ -17,6 +18,7 @@ function App() {
   return (
     <div>
       <NavbarComponent />
+      <ScrollToTop /> {/* Use ScrollToTop component */}
 
       <Routes>
         <Route path="/" Component={LandingPage} />

@@ -37,7 +37,7 @@ const HomePage = () => {
           <Row>
             <Col className="text-white ">
               <h1>Lokasi saya sekarang</h1>
-              <p>Indonesia, Jawa Tengah</p>
+              <p>Tasikmalaya, Jawa Barat</p>
             </Col>
           </Row>
         </Container>
@@ -129,13 +129,6 @@ const HomePage = () => {
                 </Col>
               );
             })}
-          </Row>
-          <Row>
-            <Col className="text-center mt-3 mb-3 pt-5">
-              <button onClick={() => filterResult("all")}>
-                lihat semua tempat
-              </button>
-            </Col>
           </Row>
         </Container>
       </div>
