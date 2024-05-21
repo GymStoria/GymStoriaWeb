@@ -25,7 +25,7 @@ const FooterComponent = () => {
             <Link className="text-decoration-none" to="/syarat&ketentuan">
               Syarat & Ketentuan
             </Link>
-            <Link className="text-decoration-none" to="">
+            <Link className="text-decoration-none" to="/kebijakandata">
               Kebijakan Data
             </Link>
           </Col>
