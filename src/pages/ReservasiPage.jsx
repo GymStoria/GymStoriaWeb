@@ -177,8 +177,4 @@ const ReservasiPage = () => {
   );
 };
 
-<<<<<<< HEAD
-export default ReservasiPage
-=======
 export default ReservasiPage;
->>>>>>> labib

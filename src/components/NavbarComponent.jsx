@@ -1,13 +1,6 @@
-<<<<<<< HEAD
- const NavbarComponent = () => {
-  return (
-    <div>NavbarComponent</div>
-  )
-}
-=======
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
->>>>>>> labib
+
 
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";

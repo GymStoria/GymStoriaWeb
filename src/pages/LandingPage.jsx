@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-const LandingPage = () => {
-  return (
-    <div>
-      LandingPage
-      </div>
-  )
-}
-=======
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import logo from "/logo.png";
 import app from "../assets/img/banner/mobileapp.svg";
 import googleplay from "../assets/img/button/google-play.svg";
->>>>>>> labib
 
 const LandingPage = () => {
   const navigate = useNavigate();
