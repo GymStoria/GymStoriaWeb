@@ -663,6 +663,12 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.reservasiPage .tempat-gym img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .reservasiPage .tempat-gym .rating {
@@ -795,28 +801,188 @@
   margin-top: 170px;
 }
 
-.detailProdukPage .galery .col:nth-child(1) img {
+.detailProdukPage .gym-detail {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px; /* Adjust the space between the images */
+  margin-top: 50px;
+}
+
+.detailProdukPage .gym-detail img {
+  flex: 1;
+}
+
+.detailProdukPage .gym-detail .main-image {
+  flex: 2;
+  width: 700px;
+  height: 610px;
+  object-fit: cover;
+}
+
+.detailProdukPage .gym-detail .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the space between the side images */
+}
+
+.detailProdukPage .gym-detail .side-images img {
+  flex: 1;
+  width: 300px;
+  object-fit: cover;
+}
+
+.detailProdukPage .details {
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.detailProdukPage .details h1 {
+  margin-bottom: 20px;
+}
+
+.detailProdukPage .details div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detailProdukPage .details img {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-kalender,
+.icon-jam {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon-peta,
+.icon-toilet {
+  display: flex;
+  align-items: center;
+}
+
+.detailProdukPage .details .icon-row {
+  display: flex;
+  align-items: center;
+}
+
+.detailProdukPage .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: var(--navbar-color);
+  background-color: var(--primary-color);
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.detailProdukPage .menu h2 {
+  cursor: pointer;
+}
+
+.detailProdukPage .menu h2:hover {
+  color: #000000;
+}
+
+.detailProdukPage .deskripsi {
+  border: 2px solid var(--color-text);
+  border-radius: 10px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.detailProdukPage .deskripsi img {
   width: 700px;
   height: 400px;
+  margin: 50px 50px 0px 50px;
 }
 
-.detailProdukPage .galery .col:nth-child(2) img {
-  width: 300px;
-  height: 200px;
+.detailProdukPage .deskripsi p {
+  margin: 30px;
 }
 
-.detailProdukPage .galery h1 {
-  color: var(--color-text);
-  font-weight:600;
+.detailProdukPage .fasilitas {
+  background-color: var(--primary-color);
+  margin: 40px;
+  padding: 60px;
 }
 
-.detailProdukPage .galery .icon img {
-  width: 50px;
-  height: 100%;
+.detailProdukPage .fasilitas .judul-row {
+  display: flex;
+  justify-content: space-around ;
+  margin-bottom: 10px;
+  background-color: #ececec;
+  padding: 20px;
 }
 
-.detailProdukPage .galery .icon  h3 {
-  font-size: 14px;
+.detailProdukPage .fasilitas .judul-row h3 {
+  margin: 0;
+}
+
+.detailProdukPage .fasilitas .isi-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ececec;
+  padding: 20px;
+  gap: 20px;
+}
+
+.detailProdukPage .fasilitas .isi-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detailProdukPage .fasilitas .isi-row p {
+  margin: 30px;
+}
+
+.detailProdukPage .img-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailProdukPage .img-con .img-up {
+  display: flex;
+}
+
+.detailProdukPage .img-con .img1 {
+  height: 610px; 
+  width: 600px; 
+}
+
+.detailProdukPage .img-con .img-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin-left: 10px; 
+}
+
+.detailProdukPage .img-con .img2,
+.detailProdukPage .img-con .img3 {
+  height: 300px; 
+  width: 400px; 
+}
+
+.detailProdukPage .img-con .img4 {
+  width: 1010px; 
+  margin-top: 10px; 
 }
 
 /* STYLE DETAIL PRODUK */
