@@ -653,6 +653,9 @@
   border-radius: 10px;
 }
 
+.reservasiPage .tempat-gym:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.354);
+}
 
 .reservasiPage .tempat-gym img {
   width: 800px;
@@ -663,7 +666,9 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  cursor: pointer;
 }
+
 
 .reservasiPage .tempat-gym .rating {
   position: absolute;
@@ -795,28 +800,306 @@
   margin-top: 170px;
 }
 
-.detailProdukPage .galery .col:nth-child(1) img {
+.detailProdukPage .gym-detail {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px; 
+  margin-top: 50px;
+}
+
+.detailProdukPage .gym-detail img {
+  flex: 1;
+}
+
+.detailProdukPage .gym-detail .main-image {
+  flex: 2;
+  width: 700px;
+  height: 610px;
+  object-fit: cover;
+}
+
+.detailProdukPage .gym-detail .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.detailProdukPage .gym-detail .side-images img {
+  flex: 1;
+  width: 300px;
+  object-fit: cover;
+}
+
+.detailProdukPage .details {
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.detailProdukPage .details h1 {
+  margin-bottom: 20px;
+}
+
+.detailProdukPage .details div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detailProdukPage .details img {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-kalender,
+.icon-jam {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon-peta,
+.icon-toilet {
+  display: flex;
+  align-items: center;
+}
+
+.detailProdukPage .details .icon-row {
+  display: flex;
+  align-items: center;
+}
+
+.detailProdukPage .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: var(--navbar-color);
+  background-color: var(--primary-color);
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.detailProdukPage .menu h2 {
+  cursor: pointer;
+}
+
+.detailProdukPage .menu h2.active {
+  border-bottom: 5px solid var(--navbar-color);
+}
+
+.detailProdukPage .menu h2:hover {
+  color: #000000;
+}
+
+.detailProdukPage .deskripsi {
+  border: 2px solid var(--color-text);
+  border-radius: 10px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.detailProdukPage .deskripsi img {
   width: 700px;
   height: 400px;
+  margin: 50px 50px 0px 50px;
 }
 
-.detailProdukPage .galery .col:nth-child(2) img {
-  width: 300px;
-  height: 200px;
+.detailProdukPage .deskripsi p {
+  margin: 30px;
 }
 
-.detailProdukPage .galery h1 {
+.detailProdukPage .fasilitas {
+  background-color: var(--primary-color);
+  margin: 40px;
+  padding: 60px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-around;
+  background-color:var(--secondary-color);
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.table-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #626262;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color:var(--secondary-color);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.table-row::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #626262;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row p {
+  margin: 0;
+}
+
+.detailProdukPage .cekRes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--navbar-color);
+  margin: 50px 0;
+}
+
+.detailProdukPage .cekRes h4:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.detailProdukPage .cekRes .cek {
+  background-color: var(--primary-color);
+  padding: 20px 70px 20px 70px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.detailProdukPage  .cekRes .res {
   color: var(--color-text);
-  font-weight:600;
+  border:2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px 45px ;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.detailProdukPage .galery .icon img {
-  width: 50px;
-  height: 100%;
+.detailProdukPage .img-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.detailProdukPage .galery .icon  h3 {
-  font-size: 14px;
+.detailProdukPage .img-con .img-up {
+  display: flex;
 }
 
-/* STYLE DETAIL PRODUK */
+.detailProdukPage .img-con .img1 {
+  height: 610px; 
+  width: 600px; 
+}
+
+.detailProdukPage .img-con .img-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin-left: 10px; 
+}
+
+.detailProdukPage .img-con .img2,
+.detailProdukPage .img-con .img3 {
+  height: 300px; 
+  width: 400px; 
+}
+
+.detailProdukPage .img-con .img4 {
+  width: 1010px; 
+  margin-top: 10px; 
+}
+
+.detailProdukPage .member {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.detailProdukPage .member h4 {
+  color: var(--navbar-color);
+  background-color: var(--primary-color);
+  padding: 10px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.detailProdukPage .member h4:hover {
+  color: #ccc4c4;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+/* STYLE DETAIL PRODUK */ /* STYLE DETAIL PRODUK */ /* STYLE DETAIL PRODUK */ /* STYLE DETAIL PRODUK */
+/* STYLE RESERVASI */ /* STYLE RESERVASI */ /* STYLE RESERVASI */ /* STYLE RESERVASI */
+
+/* STYLE TENTANG KAMI  */ /* STYLE TENTANG KAMI  */ /* STYLE TENTANG KAMI  */ /* STYLE TENTANG KAMI  */
+.tentangKami .hero {
+  margin-top: 200px;
+}
+
+.tentangKami .hero img {
+  width: 100%;
+  height: auto;
+}
+
+.tentangKami .hero .descKami {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: justify;
+  padding: 50px;
+  gap: 10px;
+}
+
+.tentangKami .hero .nama {
+  color: var(--primary-color);
+}
+
+.tentangKami .ourTeam  {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.tentangKami .timKami {
+  background-color: #e2bd2b;
+  height: 500px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}

@@ -22,7 +22,7 @@ const HomePage = () => {
   const filterResult = (catGym) => {
     if (catGym === "all") {
       setFilterGym(tempatDefault);
-      setActiveFilter(""); // Atur kembali activeFilter ke nilai awal
+      setActiveFilter(""); 
     } else {
       const result = tempatGym.filter((tempat) => tempat.category === catGym);
       setFilterGym(result.length ? result : tempatDefault);

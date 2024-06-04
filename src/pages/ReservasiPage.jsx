@@ -3,6 +3,7 @@ import { FaStar, FaChevronDown } from "react-icons/fa";
 import bannerImg from "../assets/img/banner/banner.svg";
 import { reservasiGym } from "../data/index";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ReservasiPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -56,7 +57,7 @@ const ReservasiPage = () => {
       } else if (filterOption === "Buka 24 Jam") {
         return item.kategori === "Buka 24 Jam";
       }
-      return true; // Return true by default if no filter is applied
+      return true; 
     });
     setFilteredItems(sortedItems);
   };
@@ -134,6 +135,9 @@ const ReservasiPage = () => {
               <Row>
                 {currentItems.map((data) => (
                   <Col key={data.id}>
+                    <Link to={`/detailproduk/${data.id}`}
+                    className="text-decoration-none text-dark"
+                    >
                     <div className="tempat-gym">
                       <div className="rating">
                         <FaStar />
@@ -150,6 +154,7 @@ const ReservasiPage = () => {
                         </div>
                       </div>
                     </div>
+                    </Link>
                   </Col>
                 ))}
               </Row>
@@ -178,3 +183,4 @@ const ReservasiPage = () => {
 };
 
 export default ReservasiPage;
+
