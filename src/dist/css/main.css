@@ -1085,21 +1085,71 @@
   gap: 10px;
 }
 
+.tentangKami .titleTeam {
+  margin-top: 100px;
+}
+
 .tentangKami .hero .nama {
   color: var(--primary-color);
 }
 
 .tentangKami .ourTeam  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  background-color:var(--primary-color);
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+  padding: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.tentangKami .timKami {
-  background-color: #e2bd2b;
-  height: 500px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+.tentangKami .team-card {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  width: 18%;
+  height: 200px;
+  min-width: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-weight: 600;
+}
+
+.tentangKami .team-card .nama {
+  margin: 0px 15px;
+  color: var(--navbar-color);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .tentangKami .team-card {
+      width: 22%; 
+  }
+}
+
+@media (max-width: 992px) {
+  .tentangKami .team-card {
+      width: 30%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .tentangKami .team-card {
+      width: 45%; 
+  }
+}
+
+@media (max-width: 576px) {
+  .tentangKami .team-card {
+      width: 90%; 
+  }
 }
