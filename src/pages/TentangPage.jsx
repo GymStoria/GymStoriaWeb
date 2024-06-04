@@ -2,6 +2,19 @@ import { Container, Row, Col } from "react-bootstrap";
 import logoTentang from "../assets/img/logo/imgTentangKami.svg";
 
 const TentangPage = () => {
+  const teamMembers = [
+    { name: "Andika Febriansyah", role: "Hustler - Mobile" },
+    { name: "Ni Luh Putu Nestri", role: "Scrum Master - Web" },
+    { name: "Seprianne Gabriela", role: "Hipster - Mobile" },
+    { name: "Azizatul Fara Dibah", role: "Hipster - Mobile" },
+    { name: "Hanna Titi", role: "Hipster - Web" },
+    { name: "Zulfran Saputra", role: "Hipster - Web" },
+    { name: "M. Ilham Saputra", role: "Hacker - Mobile" },
+    { name: "Dhia Irsyad", role: "Hacker - Mobile" },
+    { name: "Aji Lukito", role: "Hacker - Web" },
+    { name: "Labib Nur Ali", role: "Hacker - Web" },
+  ];
+
   return (
     <div className="tentangKami min-vh-100">
       <Container>
@@ -23,13 +36,18 @@ const TentangPage = () => {
             </div>
           </Col>
         </Row>
-        <Row className="ourTeam">
+        <Row className="titleTeam">
           <h1 className="fw-bold d-flex justify-content-center">Our Team</h1>
         </Row>
       </Container>
-      <div className="timKami">
-            <p>kabib</p>
-        </div>
+      <div className="ourTeam">
+        {teamMembers.map((member, index) => (
+          <div className="team-card" key={index}>
+            <p className="nama">{member.name}</p>
+            <p>{member.role}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
