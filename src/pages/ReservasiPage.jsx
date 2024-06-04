@@ -135,6 +135,9 @@ const ReservasiPage = () => {
               <Row>
                 {currentItems.map((data) => (
                   <Col key={data.id}>
+                    <Link to={`/detailproduk/${data.id}`}
+                    className="text-decoration-none text-dark"
+                    >
                     <div className="tempat-gym">
                       <div className="rating">
                         <FaStar />
@@ -149,9 +152,9 @@ const ReservasiPage = () => {
                           <p className="status">{data.status}</p>
                           <p className="fw-bold">{data.jarak}</p>
                         </div>
-                        <Link to={`/detailproduk/${data.id}`}>Detail</Link>
                       </div>
                     </div>
+                    </Link>
                   </Col>
                 ))}
               </Row>
