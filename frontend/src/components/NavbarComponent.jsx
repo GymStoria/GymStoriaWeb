@@ -79,8 +79,7 @@ const NavbarComponent = () => {
             </Nav>
             <Nav>
               {!isLoggedIn ? (
-                <div>
-
+                <div className="d-flex justify-content-space-between">
                 <div className="text-center">
                   <button
                     className="masuk btn btn-outline fw-bold"
@@ -100,8 +99,19 @@ const NavbarComponent = () => {
                 </div>
               ) : (
                 <>
-                <Nav.Link as={NavLink} to="#">{`Hi, ${name}`}</Nav.Link>
-                <Nav.Link as={NavLink} to="/" onClick={handleLogout}>Logout</Nav.Link>
+                <Nav.Link className="text-white" as={NavLink} to="#">{`Hi, ${name}`}</Nav.Link>
+                <Nav.Link className="textLogout"as={NavLink} to="/" onClick={handleLogout}
+                style={{
+                  backgroundColor: 'white',
+                  color: '#8a2be2',
+                  borderRadius: '5px',
+                  padding: '8px 16px', // Sesuaikan padding sesuai kebutuhan
+                  fontWeight: 'bold', // Atur tebal teks sesuai preferensi
+                  textDecoration: 'none', // Hapus garis bawah default pada link
+                  display: 'inline-block', // Menentukan agar tombol menjadi inline-block
+                  transition: 'background-color 0.3s ease', // Efek transisi saat hover
+                }}
+                >Logout</Nav.Link>
               </>
               )}
             </Nav>

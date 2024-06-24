@@ -3,12 +3,10 @@ import { FaStar, FaChevronDown } from "react-icons/fa";
 import { reservasiGym } from "../data/index";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD:src/pages/ReservasiPage.jsx
-=======
+
 import bannerImg from "../assets/img/banner/banner.svg";
 import NavbarComponent from "../components/NavbarComponent";
 import FooterComponent from "../components/FooterComponent";
->>>>>>> labib:frontend/src/pages/ReservasiPage.jsx
 
 const ReservasiPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
