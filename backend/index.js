@@ -1,21 +1,3 @@
-// import express from 'express';
-// import db from "./config/Database.js";
-// import Users from "./models/UserModel.js";
-
-// const app = express();
-// const port = 5000;
-
-// try {
-//   await db.authenticate()
-//   console.log('Connection Database Success.');
-//   await Users.sync();
-// } catch (error) {
-//   console.error(error);
-// }
-
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`);
-// });
 import express from 'express';
 import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser';

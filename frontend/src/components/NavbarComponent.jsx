@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-
 import { navLinks } from "../data/index";
-import { NavLink, Link  } from "react-router-dom";
-
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "/logo.png";
-import LoginPage from "../pages/LoginPage";
 
 const NavbarComponent = () => {
+  const navigate = useNavigate();
+  const loginClick = () => {
+    navigate("/login");
+  };
   const [changeColor, setCangeColor] = useState(false);
-
   const changeBackgroundColor = () => {
     if (window.scrollY > 10) {
       setCangeColor(true);
@@ -20,7 +20,6 @@ const NavbarComponent = () => {
 
   useEffect(() => {
     changeBackgroundColor();
-
     window.addEventListener("scroll", changeBackgroundColor);
   });
 
@@ -52,9 +51,12 @@ const NavbarComponent = () => {
               })}
             </Nav>
             <div className="text-center">
-              <button className="masuk btn btn-outline fw-bold" onClick={LoginPage}>
+              <button
+                className="masuk btn btn-outline fw-bold"
+                onClick={loginClick}
+              >
                 Masuk
-                </button>
+              </button>
             </div>
             <div className="text-center">
               <button className="daftar btn btn-outline rounded-3 bg-light fw-bold">

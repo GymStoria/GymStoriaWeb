@@ -9,12 +9,12 @@ import HomePage from "./pages/HomePage";
 import ReservasiPage from "./pages/ReservasiPage";
 import ArtikelPage from "./pages/ArtikelPage";
 import LoginPage from "./pages/LoginPage";
-import DaftarPage from "./pages/DaftarPage";
 import MembershipPage from "./pages/MembershipPage";
 import TentangPage from "./pages/TentangPage";
 import SyaratKetentuanPage from "./pages/SyaratKetentuanPage";
 import KebijakanDataPage from "./pages/KebijakanDataPage";
 import DetailProdukPage from "./pages/DetailProdukPage";
+import RegisterPage from "./pages/RegisterPage";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
         <Route path="/artikel" element={<ArtikelPage />} />
         <Route path="/tentangkami" element={<TentangPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/daftar" element={<DaftarPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/syarat&ketentuan" element={<SyaratKetentuanPage />} />
         <Route path="/kebijakandata" element={<KebijakanDataPage />} />
         <Route path="/detailproduk/:id" element={<DetailProdukPage />} /> {/* Add :id parameter */}

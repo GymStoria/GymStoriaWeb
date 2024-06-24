@@ -1172,8 +1172,31 @@
   width: 100%;
   max-width: 800px;
   height: 450px;
-  display: flex; /* Added */
-  flex-direction: row; /* Added */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.login .close-button {
+  position: absolute;
+  padding: 0px 5px;
+  margin: 5px;
+  width: auto;
+  top: 0px;
+  right: 0px;
+  background: var(--primary-color);
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--navbar-color);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .login .left-col,
@@ -1291,3 +1314,99 @@
     border-radius: 10px;
   }
 }
+
+/* STYLE LOGIN PAGE */
+
+/* STYLE REGISTER PAGE */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.register .register-box {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.register .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+.register .left-col {
+  text-align: center;
+  padding: 20px;
+}
+
+.register .left-col h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.register .left-col h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.register .left-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.register .right-col {
+  padding: 20px;
+}
+
+.register .right-col h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.register .form-control {
+  margin-bottom: 15px;
+  height: 45px;
+  font-size: 16px;
+}
+
+.register .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.register .social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.register .social-icons img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.register footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: #fff;
+  width: 100%;
+}
+
