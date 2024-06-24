@@ -15,6 +15,7 @@ import SyaratKetentuanPage from "./pages/SyaratKetentuanPage";
 import KebijakanDataPage from "./pages/KebijakanDataPage";
 import DetailProdukPage from "./pages/DetailProdukPage";
 import RegisterPage from "./pages/RegisterPage";
+import DetailArtikel from "./pages/DetailArtikel";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/reservasi" element={<ReservasiPage />} />
         <Route path="/artikel" element={<ArtikelPage />} />
+        <Route path="/detailartikel" element={<DetailArtikel />} />
         <Route path="/tentangkami" element={<TentangPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />

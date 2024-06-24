@@ -1,13 +1,40 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink, useNavigate } from "react-router-dom";
+import { jwtDecode } from "jwt-decode";
 import logo from "/logo.png";
 
 const NavbarComponent = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      try {
+        const decoded = jwtDecode(token);
+        setName(decoded.name);
+        setIsLoggedIn(true);
+      } catch (error) {
+        console.error("Invalid token:", error);
+      }
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setIsLoggedIn(false);
+    setName("");
+    navigate("/");
+  };
+
   const navigate = useNavigate();
   const loginClick = () => {
     navigate("/login");
+  };
+  const registerClick = () => {
+    navigate("/register");
   };
   const [changeColor, setCangeColor] = useState(false);
   const changeBackgroundColor = () => {
@@ -50,19 +77,34 @@ const NavbarComponent = () => {
                 );
               })}
             </Nav>
-            <div className="text-center">
-              <button
-                className="masuk btn btn-outline fw-bold"
-                onClick={loginClick}
-              >
-                Masuk
-              </button>
-            </div>
-            <div className="text-center">
-              <button className="daftar btn btn-outline rounded-3 bg-light fw-bold">
-                Daftar
-              </button>
-            </div>
+            <Nav>
+              {!isLoggedIn ? (
+                <div>
+
+                <div className="text-center">
+                  <button
+                    className="masuk btn btn-outline fw-bold"
+                    onClick={loginClick}
+                  >
+                    Masuk
+                  </button>
+                </div>
+                <div className="text-center">
+                <button
+                  className="daftar btn btn-outline rounded-3 bg-light fw-bold"
+                  onClick={registerClick}
+                >
+                  Daftar
+                </button>
+              </div>
+                </div>
+              ) : (
+                <>
+                <Nav.Link as={NavLink} to="#">{`Hi, ${name}`}</Nav.Link>
+                <Nav.Link as={NavLink} to="/" onClick={handleLogout}>Logout</Nav.Link>
+              </>
+              )}
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
