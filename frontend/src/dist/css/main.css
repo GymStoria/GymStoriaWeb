@@ -1094,18 +1094,6 @@
 }
 
 .tentangKami .ourTeam  {
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
-.tentangKami .timKami {
-  background-color: #e2bd2b;
-  height: 500px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
